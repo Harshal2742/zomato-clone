@@ -1,7 +1,7 @@
 @use "../colors" as *;
 
 .section-get-app {
-  padding: 8rem 0;
+  padding: 4.8rem 0;
   background-color: #fffbf7;
 }
 
@@ -29,14 +29,14 @@
   font-weight: 500;
   font-size: 4.4rem;
   line-height: 5.6rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.6rem;
 }
 
 .get-app-text {
   font-size: 1.6rem;
   max-width: 48rem;
-  line-height: 2;
-  margin-bottom: 3.2rem;
+  line-height: 1.8;
+  margin-bottom: 2.8rem;
 }
 
 .app-img {
@@ -56,62 +56,89 @@
   align-items: center;
 
   input[type="radio"] {
+    cursor: pointer;
     height: 1.8rem;
     width: 1.8rem;
   }
 
   label {
+    cursor: pointer;
     font-weight: 400;
   }
 }
 
-.email-phone-input {
-  display: inline-block;
-  max-width: 40rem;
-  padding: 1.2rem;
-  border-radius: 8px;
-  outline: none;
-  border: none;
-  border: 1px solid #777;
-  font-size: 1.8rem;
+.get-app-input-box {
+  max-width: 45rem;
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 1rem;
+  margin-bottom: 2.8rem;
 }
 
-.get-app-email-phone-input-box {
-  margin-bottom: 3.2rem;
-  max-width: 100%;
-  display: flex;
+.email-input {
+  padding: 1.3rem 1.2rem;
+  height: 4.8rem;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  flex: 2;
+  font-size: 1.8rem;
 
-  gap: 1rem;
+  &::placeholder {
+    color: #777;
+  }
+}
+
+.phone-input-box {
+  height: 4.8rem;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  flex: 2;
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  background-color: #fff;
+  gap: 0.8rem;
 
   input {
-    flex-basis: 32rem;
-
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1.8rem;
+    border-left: 1px solid #777;
+    padding: 0 0.8rem;
     &::placeholder {
       color: #777;
-      font-weight: 300;
     }
   }
 
-  button {
+  select {
+    font-size: 1.8rem;
     border: none;
-    padding: 1.6rem;
-    font-size: 1.6rem;
-    color: white;
-    background-color: $color-primary;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s;
+    background-color: transparent;
+    font-weight: 300;
+  }
+}
 
-    &:hover {
-      background-color: $color-primary-s-1;
-    }
+.share-btn {
+  cursor: pointer;
+  flex: 1;
+  border: none;
+  border-radius: 8px;
+  background-color: $color-primary;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 300;
+
+  &:hover {
+    background-color: $color-primary-s-1;
   }
 }
 
 .download-text {
   font-size: 1.4rem;
   color: #666;
-  margin-bottom: 2.8rem;
+  margin-bottom: 2rem;
 }
 
 .app-store-img-box {

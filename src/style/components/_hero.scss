@@ -53,6 +53,8 @@
     width: 100%;
     background-color: transparent;
     border: none;
+    font-size: 1.4rem;
+    font-weight: 300;
   }
 }
 
@@ -64,6 +66,7 @@
   border-left: 1px solid $gray-1;
   padding-left: 0.4rem;
   input {
+    font-size: 1.4rem;
     outline: none;
     width: 100%;
     border: none;

@@ -1,4 +1,10 @@
+import { useState } from "react";
+
+const countryCode = ["+91", "+87", "+99", "+34", "+232", "+45", "+89", "+23"];
+
 const GetApp = () => {
+  const [inputEmail, setInputEmail] = useState(true);
+
   return (
     <section className="section-get-app">
       <div className="container get-app-grid get-app-container">
@@ -12,7 +18,11 @@ const GetApp = () => {
           <p className="get-app-text">
             We will send you a link, open it on your phone to download the app
           </p>
-          <form>
+          <form
+            onSubmit={(e: React.FormEvent<HTMLFormElement>) => {
+              e.preventDefault();
+            }}
+          >
             <div className="radio-btn-box">
               <div className="get-app-radio-label-wrapper">
                 <input
@@ -21,27 +31,54 @@ const GetApp = () => {
                   name="shareon"
                   value="email"
                   defaultChecked
+                  onChange={() => setInputEmail(true)}
                 />
                 <label htmlFor="email">Email</label>
               </div>
               <div className="get-app-radio-label-wrapper">
-                <input id="phone" type="radio" name="shareon" value="phone" />
+                <input
+                  id="phone"
+                  type="radio"
+                  name="shareon"
+                  value="phone"
+                  onChange={() => setInputEmail(false)}
+                />
                 <label htmlFor="phone">Phone</label>
               </div>
             </div>
-            <div className="get-app-email-phone-input-box">
-              <input
-                type="email"
-                className="email-phone-input"
-                placeholder="Email"
-              />
-              <button>Share App Link</button>
+            <div className="get-app-input-box">
+              {inputEmail ? (
+                <input
+                  type="email"
+                  className="email-input"
+                  placeholder="Email"
+                />
+              ) : (
+                <div className="phone-input-box">
+                  <select>
+                    {countryCode.map((code, index) => {
+                      return (
+                        <option key={index} value={code}>
+                          {code}
+                        </option>
+                      );
+                    })}
+                  </select>
+                  <input type="tel" placeholder="type here..." />
+                </div>
+              )}
+              <button className="share-btn">Share App Link</button>
             </div>
           </form>
           <p className="download-text">Download app from</p>
           <div className="app-store-img-box">
-            <img src="/img/getapp/play-store.png" />
-            <img src="/img/getapp/apple-store.png" />
+            <a href="#">
+              <img src="/img/getapp/play-store.png" />
+            </a>
+
+            <a href="#">
+              <img src="/img/getapp/apple-store.png" />
+            </a>
           </div>
         </div>
       </div>

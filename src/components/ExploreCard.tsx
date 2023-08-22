@@ -1,9 +1,3 @@
-// {
-//   title: "Nightlife and Clubs",
-//   subtitle: "Explore the city's top nightlife outlets",
-//   img: "/img/explore-3.jpeg",
-// },
-
 type ExploreCardProps = {
   title: string;
   subtitle: string;

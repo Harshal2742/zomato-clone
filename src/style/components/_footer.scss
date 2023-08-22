@@ -1,14 +1,15 @@
+.section-footer {
+  padding: 4.8rem 0 3.6rem;
+  background-color: #f8f8f8;
+}
+
 .footer-content-grid {
+  padding-bottom: 6.4rem;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto 1fr;
   column-gap: 4.8rem;
   row-gap: 3.6rem;
-}
-
-.section-footer {
-  padding: 4.8rem 0;
-  background-color: #f8f8f8;
 }
 
 .brand-name-black {
@@ -75,4 +76,22 @@
 .learn-more,
 .social-links {
   grid-row: 1/-1;
+}
+
+.footer-app-store-img-box {
+  margin-top: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.app-store-logo {
+  max-width: 14rem;
+}
+
+.copy-right-text {
+  padding-top: 3.2rem;
+  font-size: 1.275rem;
+  line-height: 1.3;
+  border-top: 1px solid #ccc;
 }

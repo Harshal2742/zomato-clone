@@ -99,18 +99,24 @@ const Footer = (): JSX.Element => {
                   </a>
                 </li>
               </ul>
-              <div>
+              <div className="footer-app-store-img-box">
                 <a href="#">
-                  <img src="/img/getapp/apple-store.png" />
+                  <img
+                    className="app-store-logo"
+                    src="/img/getapp/apple-store.png"
+                  />
                 </a>
                 <a href="#">
-                  <img src="/img/getapp/play-store.png" />
+                  <img
+                    className="app-store-logo"
+                    src="/img/getapp/play-store.png"
+                  />
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <p>
+        <p className="copy-right-text">
           By continuing past this page, you agree to our Terms of Service,
           Cookie Policy, Privacy Policy and Content Policies. All trademarks are
           properties of their respective owners. 2008-2023 © Zomato™ Ltd. All
