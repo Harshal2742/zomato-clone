@@ -1,0 +1,48 @@
+/********************************************************************************
+ ### FONT SIZE - 12px 14px 16px 18px 20px 24px 28px 30px 32px 36px 40px 44px 48px 56px 64px
+
+ ### SPACING - 8px 10px 12px 18px 24px 28px 32px 36px 48px 64px 80px 96px 108px 128px 
+
+ ### LINE HEIGHT -
+********************************************************************************/
+
+.container {
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+.heading {
+  &-primary {
+    font-size: 3.6rem;
+    font-weight: 500;
+    line-height: 1;
+  }
+
+  &-secondary {
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+}
+
+@mixin gird($cols) {
+  display: grid;
+  gap: 2.4rem;
+  grid-template-columns: repeat($cols, 1fr);
+}
+
+.grid-1-col {
+  @include gird(1);
+}
+.grid-2-col {
+  @include gird(2);
+}
+.grid-3-col {
+  @include gird(3);
+}
+.grid-4-col {
+  @include gird(4);
+}
+.grid-5-col {
+  @include gird(5);
+}

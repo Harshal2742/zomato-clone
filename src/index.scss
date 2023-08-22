@@ -1,0 +1,34 @@
+@use "./style/general";
+@use "./style/components/header";
+@use "./style/components/hero";
+@use "./style/components/explore";
+@use "./style/components/exploreCard";
+@use "./style/components/collections";
+@use "./style/components/collectionCard";
+@use "./style/components/popularLocalities";
+@use "./style/components/getapp";
+@use "./style/components/exploreOptions";
+@use "./style/components/exploreOptionsDropdown";
+@use "./style/components/footer";
+@use "./style/components/footeItemList";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  line-height: 1;
+  position: relative;
+  color: #333;
+  font-weight: 300;
+}

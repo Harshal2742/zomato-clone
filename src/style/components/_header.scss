@@ -1,0 +1,36 @@
+.header {
+  height: 7.2rem;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 5;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2.4rem 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  line-height: 1.5;
+  font-size: 1.8rem;
+  font-weight: 300;
+  padding: 0.8rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.get-app {
+  justify-self: flex-start;
+  margin-right: auto;
+
+  a {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+}

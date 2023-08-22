@@ -1,0 +1,62 @@
+.collection-card {
+  height: 32rem;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.collection-img-box {
+  max-width: 100%;
+  height: 100%;
+}
+
+.collection-img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection-text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.05) 50%,
+    rgba(0, 0, 0, 0.05) 85%
+  );
+}
+
+.collection-text-box {
+  padding: 1rem 1.6rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.collection-title {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 0.8rem;
+}
+
+.collection-place-count {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.places-arrow-icon {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+.collection-place-count {
+  display: flex;
+  align-items: center;
+}
