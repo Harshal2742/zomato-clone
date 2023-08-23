@@ -22,6 +22,10 @@ html {
   @media screen and (max-width: $large) {
     font-size: 56.25%;
   }
+
+  @media screen and (max-width: $small) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -39,6 +43,10 @@ body {
   @media screen and (max-width: $extra-large) {
     padding: 0 3.6rem;
   }
+
+  @media screen and (max-width: $small) {
+    padding: 0 2.4rem;
+  }
 }
 
 .heading {
@@ -46,10 +54,10 @@ body {
     font-size: 3.6rem;
     font-weight: 500;
     line-height: 1;
-    @media screen and (max-width: $large) {
-      font-size: 3.2rem;
-      line-height: 0.8;
-    }
+    // @media screen and (max-width: $large) {
+    //   font-size: 3.2rem;
+    //   line-height: 0.8;
+    // }
   }
 
   &-secondary {
@@ -59,6 +67,10 @@ body {
 
     @media screen and (max-width: $large) {
       font-size: 3.2rem;
+      line-height: 1;
+    }
+    @media screen and (max-width: $small) {
+      font-size: 2.4rem;
       line-height: 1;
     }
   }
@@ -85,13 +97,29 @@ body {
   @media screen and (max-width: $large) {
     @include gird(2);
   }
+
+  @media screen and (max-width: $small) {
+    @include gird(1);
+  }
 }
 .grid-4-col {
   @include gird(4);
   @media screen and (max-width: $large) {
     @include gird(3);
   }
+
+  @media screen and (max-width: $small) {
+    @include gird(2);
+  }
 }
 .grid-5-col {
   @include gird(5);
+
+  @media screen and (max-width: $large) {
+    @include gird(4);
+  }
+
+  @media screen and (max-width: $small) {
+    @include gird(2);
+  }
 }

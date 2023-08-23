@@ -13,6 +13,12 @@
       grid-column: 2/3;
     }
   }
+
+  @media screen and (max-width: $large) {
+    &:last-child {
+      grid-column: auto;
+    }
+  }
 }
 
 .collection-img-box {

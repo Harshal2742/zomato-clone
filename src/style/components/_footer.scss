@@ -13,10 +13,24 @@
   row-gap: 3.6rem;
 
   @media screen and (max-width: $extra-large) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    column-gap: 3.6rem;
+    row-gap: 3.2rem;
+  }
+
+  @media screen and (max-width: $large) {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     column-gap: 3.6rem;
     row-gap: 3.2rem;
+  }
+
+  @media screen and (max-width: $small) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
   }
 }
 
@@ -84,6 +98,22 @@
 .learn-more,
 .social-links {
   grid-row: 1/-1;
+}
+
+.learn-more {
+  @media screen and (max-width: $small) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+.social-links {
+  grid-row: 2;
+  grid-column: 3/4;
+  @media screen and (max-width: $extra-large) {
+    grid-column: auto;
+    grid-row: auto;
+  }
 }
 
 .for-enterprises {

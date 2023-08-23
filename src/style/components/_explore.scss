@@ -3,10 +3,18 @@
 .explore {
   width: 100%;
   margin-bottom: 8rem;
+
+  @media screen and (max-width: $large) {
+    margin-bottom: 6.4rem;
+  }
 }
 
 .grid-box {
   @media screen and (max-width: $large) {
     grid-template-columns: repeat(8, 1fr);
+  }
+  @media screen and (max-width: $small) {
+    grid-template-columns: 1fr;
+    padding: 0 1.8rem;
   }
 }

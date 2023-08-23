@@ -9,6 +9,10 @@
     color: black;
     margin-bottom: 1rem;
   }
+
+  @media screen and (max-width: $large) {
+    margin-bottom: 8rem;
+  }
 }
 
 .collections-text-box {
@@ -16,11 +20,16 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 3.6rem;
+
+  @media screen and (max-width: $large) {
+    margin-bottom: 2.8rem;
+  }
 }
 
 .collections-text {
   font-size: 1.6rem;
   font-weight: 400;
+  line-height: 1.6;
 }
 
 .all-collections-link {
