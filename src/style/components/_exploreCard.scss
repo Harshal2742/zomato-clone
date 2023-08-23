@@ -1,3 +1,5 @@
+@use "../breakpoints" as *;
+
 .explore-card {
   border-radius: 14px;
   overflow: hidden;
@@ -8,6 +10,16 @@
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.33);
   &:hover {
     transform: scale(1.05);
+  }
+
+  @media screen and (max-width: $large) {
+    height: 28rem;
+    grid-column: span 4;
+
+    &:last-child {
+      grid-row: 2;
+      grid-column: 3/7;
+    }
   }
 }
 
@@ -40,5 +52,6 @@
 
 .explore-subtitle {
   font-size: 1.6rem;
+  line-height: 1.6;
   font-weight: 400;
 }

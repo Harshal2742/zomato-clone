@@ -21,10 +21,12 @@ const exploreItems = [
 const Explore = () => {
   return (
     <section className="explore">
-      <div className="container grid-3-col">
-        {exploreItems.map((item, index) => (
-          <ExploreCard key={index} {...item} />
-        ))}
+      <div className="container">
+        <div className="grid-3-col grid-box">
+          {exploreItems.map((item, index) => (
+            <ExploreCard key={index} {...item} />
+          ))}
+        </div>
       </div>
     </section>
   );

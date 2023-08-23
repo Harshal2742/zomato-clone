@@ -1,4 +1,5 @@
 @use "./../colors" as *;
+@use "../breakpoints" as *;
 
 .collections {
   margin-bottom: 10.8rem;
@@ -29,6 +30,23 @@
   text-decoration: none;
   color: $color-primary-s-1;
   font-weight: 400;
+
+  &.extra-large {
+    @media screen and (max-width: $large) {
+      display: none;
+    }
+  }
+
+  &.large {
+    display: none;
+
+    @media screen and (max-width: $large) {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      margin-top: 1.8rem;
+    }
+  }
 }
 
 .all-collections-icon {

@@ -96,8 +96,9 @@ const PopularLocalities = (): JSX.Element => {
               </div>
             ))}
           <div
-            className="show-button"
+            className={`show-button ${!showMore && "not-expanded"}`}
             onClick={() => setShowMore((prev) => !prev)}
+            role="button"
           >
             <p>{showMore ? "see less" : "see more"}</p>
             {showMore ? (

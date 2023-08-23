@@ -34,7 +34,7 @@ const Collections = () => {
             Explore curated lists of top restaurants, cafes, pubs, and bars in
             Surat, based on trends
           </p>
-          <a href="#" className="all-collections-link">
+          <a href="#" className="all-collections-link extra-large">
             All collections in Surat
             <IoMdArrowDropright className="all-collections-icon" />
           </a>
@@ -44,6 +44,10 @@ const Collections = () => {
             <CollectionCard key={index} {...collection} />
           ))}
         </div>
+        <a href="#" className="all-collections-link large">
+          All collections in Surat
+          <IoMdArrowDropright className="all-collections-icon" />
+        </a>
       </div>
     </section>
   );

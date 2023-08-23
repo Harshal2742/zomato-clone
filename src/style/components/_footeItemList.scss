@@ -10,6 +10,10 @@
       font-size: 1.4rem;
       text-decoration: none;
       color: inherit;
+
+      &:hover {
+        color: #000;
+      }
     }
   }
 }
