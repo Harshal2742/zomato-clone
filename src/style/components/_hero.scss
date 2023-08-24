@@ -37,7 +37,7 @@
 .hero-heading {
   margin-bottom: 3.6rem;
   text-align: center;
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $medium) {
     line-height: 1.6;
   }
 }

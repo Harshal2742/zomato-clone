@@ -23,7 +23,7 @@ html {
     font-size: 56.25%;
   }
 
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $medium) {
     font-size: 50%;
   }
 }
@@ -44,7 +44,7 @@ body {
     padding: 0 3.6rem;
   }
 
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $medium) {
     padding: 0 2.4rem;
   }
 }
@@ -69,7 +69,7 @@ body {
       font-size: 3.2rem;
       line-height: 1;
     }
-    @media screen and (max-width: $small) {
+    @media screen and (max-width: $medium) {
       font-size: 2.4rem;
       line-height: 1;
     }
@@ -98,7 +98,7 @@ body {
     @include gird(2);
   }
 
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $medium) {
     @include gird(1);
   }
 }
@@ -108,7 +108,7 @@ body {
     @include gird(3);
   }
 
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $medium) {
     @include gird(2);
   }
 }
@@ -119,7 +119,7 @@ body {
     @include gird(4);
   }
 
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $medium) {
     @include gird(2);
   }
 }

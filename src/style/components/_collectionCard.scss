@@ -14,7 +14,7 @@
     }
   }
 
-  @media screen and (max-width: $large) {
+  @media screen and (max-width: $medium) {
     &:last-child {
       grid-column: auto;
     }

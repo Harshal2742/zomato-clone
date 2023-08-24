@@ -5,7 +5,7 @@
   padding: 4.8rem 0;
   background-color: #fffbf7;
 
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $medium) {
     padding: 3.6rem;
   }
 }
@@ -20,7 +20,7 @@
   gap: 3.6rem;
   align-items: center;
 
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $medium) {
     grid-template-columns: 1fr;
     gap: 2.8rem;
   }
@@ -34,7 +34,7 @@
   justify-content: end;
   align-items: center;
 
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $medium) {
     justify-self: center;
     justify-content: center;
   }
@@ -51,7 +51,7 @@
     line-height: 0.8;
     margin-bottom: 1.4rem;
   }
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $medium) {
     font-size: 2.8rem;
     line-height: 0.8;
     text-align: center;
@@ -75,7 +75,7 @@
   font-size: 1.6rem;
   margin-bottom: 2rem;
 
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $medium) {
     align-items: center;
     justify-content: center;
   }
@@ -105,7 +105,7 @@
   gap: 1rem;
   margin-bottom: 2.8rem;
 
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $medium) {
     flex-direction: column;
     max-width: 100%;
   }
@@ -146,7 +146,7 @@
     &::placeholder {
       color: #777;
     }
-    @media screen and (max-width: $small) {
+    @media screen and (max-width: $medium) {
       padding: 0.5rem;
     }
   }
@@ -173,7 +173,7 @@
     background-color: $color-primary-s-1;
   }
 
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $medium) {
     padding: 1.4rem;
   }
 }
@@ -182,7 +182,7 @@
   font-size: 1.4rem;
   color: #666;
   margin-bottom: 2rem;
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $medium) {
     text-align: center;
     margin-bottom: 1.6rem;
   }
@@ -192,7 +192,7 @@
   display: flex;
   gap: 2rem;
 
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $medium) {
     justify-content: center;
   }
 

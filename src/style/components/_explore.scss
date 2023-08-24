@@ -13,6 +13,7 @@
   @media screen and (max-width: $large) {
     grid-template-columns: repeat(8, 1fr);
   }
+
   @media screen and (max-width: $small) {
     grid-template-columns: 1fr;
     padding: 0 1.8rem;

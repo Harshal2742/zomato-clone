@@ -55,7 +55,7 @@
   font-size: 2rem;
   font-weight: 500;
 
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $medium) {
     margin-bottom: 0.8rem;
     line-height: 1;
     font-size: 1.8rem;
@@ -67,7 +67,7 @@
   line-height: 1.6;
   font-weight: 400;
 
-  @media screen and (max-width: $small) {
+  @media screen and (max-width: $medium) {
     line-height: 1.4;
   }
 }
